@@ -69,3 +69,7 @@ I use https://github.com/SpenceKonde/ATTinyCore .
 ## Conclusion
 
 Render me surprised.
+
+## Other stuff
+
+I2C pullup resistor calculator: https://github.com/holgerlembke/i2c-pullup-online-calculator
