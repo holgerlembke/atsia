@@ -24,7 +24,7 @@ As you can see, the 131 km between him and me was a way harder journey than most
 
 ![Atsia](https://raw.githubusercontent.com/holgerlembke/atsia/main/media/atsiaimg.jpg)
 
-This mess of wires is one Arduino Uno and four ATtiny 85.
+This mess of wires is one Arduino Uno and four ATtiny85.
 
 The ATtiny85 are set up the following way:
 
@@ -50,7 +50,7 @@ Wires:
 * white: SCL
 * green: SDA
 
-ID0/ID1 are used to select the internal ID. All ATtiny85 share the same I2C address, 0x42 in this case. This can be verified with a simple I2C bus scanner:
+ID0/ID1 are used to select the internal ID. All ATtiny85s share the same I2C address, 0x42 in this case. This can be verified with a I2C bus scanner:
 
 ![Atsia](https://raw.githubusercontent.com/holgerlembke/atsia/main/media/atsiaserver.png)
 
