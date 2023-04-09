@@ -1,3 +1,5 @@
+![Atsia](https://raw.githubusercontent.com/holgerlembke/atsia/main/media/atsiammedia.gif)
+
 # All The Same I2C Address
 
 Preface: this is pure Arduino code. Nothing changed, no tricks, no false bottom. 
@@ -20,7 +22,7 @@ As you can see, the 131 km between him and me was a way harder journey than most
 
 ## Yes!
 
-![Atsia](https://raw.githubusercontent.com/holgerlembke/atsia/main/media/atsiammedia.gif)
+![Atsia](https://raw.githubusercontent.com/holgerlembke/atsia/main/media/atsiaimg.jpg)
 
 This mess of wires is one Arduino Uno and four ATtiny 85.
 
@@ -41,8 +43,6 @@ The ATtiny85 are set up the following way:
     L  1: is LED command
     S  x: state of LED
 ```
-![Atsia](https://raw.githubusercontent.com/holgerlembke/atsia/main/media/atsiaimg.jpg)
-
 Wires:
 * red/black: Vcc,Vdd
 * yellow: LED
