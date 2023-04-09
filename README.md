@@ -51,13 +51,13 @@ Wires:
 
 ID0/ID1 are used to select the internal ID. All ATtiny85s share the same I2C address, 0x42 in this case. This can be verified with a I2C bus scanner:
 
-![Atsia](https://raw.githubusercontent.com/holgerlembke/atsia/main/media/atsiaserver.png)
+![Atsia](https://raw.githubusercontent.com/holgerlembke/atsia/main/media/atsiacontroller.png)
 
-## atsiaClient
+## atsiaTarget
 
 A simple command interface was designed. Bit 0+1 select the ID (0..3). ID is set by the external pins at boot time and for verification, the Tinys blink it out at boot time. Bit 4 controles the access to the LED, bit 5 sets/clears the LED. Simple stuff.
 
-## atsiaMaster
+## atsiaController
 
 Not much special, too. Just do a I2C bus scan and than blinky the LEDs by sending the command.
 
@@ -68,6 +68,10 @@ I use https://github.com/SpenceKonde/ATTinyCore .
 ## Conclusion
 
 Render me surprised.
+
+After turning on the brain again, it is quite simple why it works: All the targets do is listen to the bus. 
+
+All they can do is clock stretching. So one ATtiny might hold the clock line down (it does not happen here, but it could.). For all other targets including the controller it would like one target holds the clock line down. The other targets simply release the clock line, they don't care what they see on the clock line. And then the last target might release the clock line, too. Again, clock stretching does not happen here, but it might work with that, too. 
 
 ## Other stuff
 
