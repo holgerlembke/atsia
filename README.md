@@ -6,7 +6,7 @@ Preface: this is pure Arduino code. Nothing changed, no tricks, no false bottom.
 
 ## The other day
 
-The other day I was playing around with an PCF8577 based LC-Display. As usual, this LCD stuff is strange. But what puzzled me most was the idea that the PCF8577 has only one (non selectable) I2C address. To support multiple PCF8577s they use an index number within the command bytes send to (apparently) all PCF8577s.
+The other day I was playing around with an PCF8577 based LC-Display. As usual, this LCD stuff is strange. But what puzzled me most was the fact that the PCF8577 has only one (non selectable) I2C address. To support multiple PCF8577s they use an index number within the command bytes send to (apparently) all PCF8577s.
 
 ## What?
 
