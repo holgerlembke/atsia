@@ -29,10 +29,10 @@ This mess of wires is one Arduino Uno and four ATtiny85s.
 The ATtiny85s are set up the following way:
 ```
                               +---v---+
-                          PB5 |1     8| VCC
+                          PB5 |1     8| Vcc
            Input+ID0        3 |2     7| 2  SCL
                  ID1        4 |3     6| 1  LED
-                          GND |4     5| 0  SDA
+                          Vdd |4     5| 0  SDA
                               +-------+
   Command interface
         76543210
