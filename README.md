@@ -73,6 +73,8 @@ After turning on the brain again (as much as possible), it is quite simple why i
 
 All they can do is clock stretching. So one ATtiny might hold the clock line down (it does not happen here, but it could.). For all other targets including the controller it would look like one target holds the clock line down. The other targets simply release the clock line, they don't care what they see on the clock line. And then the last target might release the clock line, too. Again, clock stretching does not happen here, but it might work, too. 
 
+In short: all targets, regardless of their address, do listen to the bus. So all targets see the data on the bus. And can do whatever they want.
+
 ## Other stuff
 
 I2C pullup resistor calculator: https://github.com/holgerlembke/i2c-pullup-online-calculator
